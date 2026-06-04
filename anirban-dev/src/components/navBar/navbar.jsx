@@ -1,5 +1,5 @@
 import "./navbar.css";
-import Logo from "../Logo/Logo";
+import Logo from "../logo/logo";
 import { NAV_ITEMS } from "../../constants/navbarItems";
 
 function Navbar() {
