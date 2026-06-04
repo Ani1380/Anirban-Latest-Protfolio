@@ -1,4 +1,4 @@
-import "./Navbar.css";
+import "./navbar.css";
 import Logo from "../Logo/Logo";
 import { NAV_ITEMS } from "../../constants/navbarItems";
 
