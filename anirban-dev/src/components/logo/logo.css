@@ -1,0 +1,15 @@
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo h1 {
+  font-family: 'Archivo Black', sans-serif;
+  color: var(--text-primary);
+  letter-spacing: -1px;
+  font-size: var(--logo-size,2rem);
+}
+
+.dotDev {
+  color: var(--primary);
+}

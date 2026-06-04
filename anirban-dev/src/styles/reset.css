@@ -1,0 +1,24 @@
+:root {
+  --background-primary: #050409;
+  --background-secondary: #0B0813;
+
+  --text-primary: #FFFFFF;
+  --text-secondary: #A099B5;
+
+  --primary: #A020F0;
+  --accent: #00F2FE;
+
+  --border-light: rgba(255, 255, 255, 0.08);
+}
+
+* {
+  margin: var(--custom-margin, 0);
+  padding: var(--custom-padding, 0);
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background-primary);
+  color: var(--text-primary);
+  font-family: 'Inter', sans-serif;
+}
