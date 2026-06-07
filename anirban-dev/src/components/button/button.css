@@ -1,0 +1,15 @@
+.btn{
+    width: var(--btn-width, 10rem);
+    height: var(--btn-height, 2rem);
+    border-radius: 20px;
+    font-weight: var(--btn-font-weight,500);
+}
+.btn-primary{
+    background-color: var(--primary);
+    color: var(--text-primary);
+}
+.btn-secondary{
+    background-color: var(--background-secondary);
+    color: var(--text-primary);
+    border-color: var(--primary);
+}

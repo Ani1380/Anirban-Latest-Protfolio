@@ -4,7 +4,7 @@
 }
 
 .logo h1 {
-  font-family: 'Archivo Black', sans-serif;
+  font-family: 'Archivo Black';
   color: var(--text-primary);
   letter-spacing: -1px;
   font-size: var(--logo-size,2rem);
