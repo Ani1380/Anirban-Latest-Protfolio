@@ -6,7 +6,6 @@ import { MdOutlineCall } from "react-icons/md";
 import { CiLinkedin } from "react-icons/ci";
 
 
-
 function buttonClickFunction(message){
     alert(message);
 }
