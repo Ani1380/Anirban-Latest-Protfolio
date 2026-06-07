@@ -1,7 +1,7 @@
 export const NAV_ITEMS = [
     {
-        id: "about",
-        label: "About"
+        id: "homepage",
+        label: "Home"
     },
     {
         id: "journey",
@@ -9,10 +9,10 @@ export const NAV_ITEMS = [
     },
     {
         id: "certifications",
-        label: "Certifications"
+        label: "Professional Proofs"
     },
     {
         id: "contact",
-        label: "Contact"
+        label: "Connect Me"
     }
 ];
