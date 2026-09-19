@@ -1,16 +1,52 @@
-# React + Vite
+# Anirban Karmakar — Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React + Vite + Framer Motion portfolio, with a Vercel Function contact form powered by Resend.
 
-Currently, two official plugins are available:
+## Run the frontend locally
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+```bash
+npm install
+npm run dev
+```
 
-## React Compiler
+## CV
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Place your resume at:
 
-## Expanding the ESLint configuration
+`public/Anirban_Karmakar_Resume.pdf`
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Contact form
+
+Production flow:
+
+`React form → /api/contact → Vercel Function → Resend → anirban@ianirban.in`
+
+The Resend API key is server-side only and is never exposed to the browser.
+
+### Required Vercel environment variable
+
+Create:
+
+`RESEND_API_KEY = re_...`
+
+Optional:
+
+`CONTACT_FROM_EMAIL = Anirban Portfolio <hello@contact.ianirban.in>`
+
+### Resend domain
+
+Recommended: verify the sending subdomain `contact.ianirban.in` in Resend and add the exact DNS records Resend provides in GoDaddy.
+
+This keeps website DNS and your existing `anirban@ianirban.in` mailbox separate. Do not delete or replace the existing MX records used by your mailbox.
+
+After the sending domain is verified, redeploy the Vercel project and test the contact form.
+
+## Deploy to Vercel
+
+Import the project/repository into Vercel. Vite is detected automatically.
+
+Then add `ianirban.in` and `www.ianirban.in` under:
+
+Vercel Project → Settings → Domains
+
+Only change the website DNS records Vercel asks for. Keep your existing mail/MX records.
