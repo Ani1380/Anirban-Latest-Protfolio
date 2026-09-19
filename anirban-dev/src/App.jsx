@@ -1,15 +1,33 @@
-import Navbar from './components/navBar/navbar';
-import Hero from './components/hero/hero';
-import StatsBar from './components/stateBar/stateBar';
+import { motion, useScroll, useSpring } from 'framer-motion'
+import Navbar from './components/Navbar'
+import Hero from './components/Hero'
+import Projects from './components/Projects'
+import Journey from './components/Journey'
+import Certifications from './components/Certifications'
+import TechStack from './components/TechStack'
+import Contact from './components/Contact'
+import Footer from './components/Footer'
 
-function App() {
+export default function App() {
+  const { scrollYProgress } = useScroll()
+  const progress = useSpring(scrollYProgress, { stiffness: 130, damping: 28, mass: 0.35 })
+
   return (
-    <div>
+    <>
+      <motion.div className="page-progress" style={{ scaleX: progress }} />
+      <div className="page-grid" />
+      <div className="ambient ambient-one" />
+      <div className="ambient ambient-two" />
       <Navbar />
-      <Hero />
-      <StatsBar />
-    </div>
-  );
+      <main>
+        <Hero />
+        <Projects />
+        <Journey />
+        <Certifications />
+        <TechStack />
+        <Contact />
+      </main>
+      <Footer />
+    </>
+  )
 }
-
-export default App;
